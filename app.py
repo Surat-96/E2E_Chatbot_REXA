@@ -18,7 +18,7 @@ from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
 from nltk.chat.util import Chat, reflections
 
-app=Flask(__name__,template_folder='template')
+app=Flask(__name__, static_folder='static', template_folder='template')
 
 
 nltk.download('punkt')
